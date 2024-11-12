@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movielibrary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 id="logo">Movielibrary</h1>
+        <ul>
+            <li><a href="#" onclick="getMoviesByGenre('Action')">Action</a></li>
+            <li><a href="#" onclick="getMoviesByGenre('Comedy')">Comedy</a></li>
+            <li><a href="#" onclick="getMoviesByGenre('Drama')">Drama</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search movies...">
+            <span class="search-icon">🔍</span>
+        </div>
+    </nav>
+    <main class="main">
+        <section id="movie-box" class="row"></section>
+        <div id="loading" class="loading-spinner"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
